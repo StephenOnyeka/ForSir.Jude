@@ -1,0 +1,1 @@
+This project using shopify as the commerce store.

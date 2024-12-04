@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Ola's Coffee",
+        "price": 109.95,
+        "category": "Men",
+        "image": "/coffee/Products/Ola coffee.jpeg",
+        "rating": {}
+    },
+    {
+        "id": 2,
+        "title": "Tea",
+        "price": 320.30,
+        "category": "Men",
+        "image": "/coffee/Products/tea.jpg",
+        "rating": {}
+    },
+    {
+        "id": 4,
+        "title": "OLA-ELUBO",
+        "price": 15.99,
+        "category": "All",
+        "image": "/coffee/Products/OLA-ELUBO.jpeg",
+        "rating": {}
+    },
+    {
+        "id": 5,
+        "title": "Ola Exotic",
+        "price": 300.00,
+        "category": "All",
+        "image": "/coffee/Products/Ola-Exotic.jpeg",
+        "rating": {}
+    },
+    {
+        "id": 7,
+        "title": "Ola Organic Herbal Teas",
+        "price": 500.90,
+        "category": "Men",
+        "image": "/coffee/Products/Olas-Organic-Herbal-Teas.jpg",
+        "rating": {}
+    },
+    {
+        "id": 8,
+        "title": " Numi",
+        "price": 10.99,
+        "category": "Men",
+        "image": "/coffee/Products/Numi.jpeg ",
+        "rating": {}
+    },
+    {
+        "id": 9,
+        "title": "Rooibos Tea Bags",
+        "price": 64.00,
+        "category": "All",
+        "image": "/coffee/Products/Rooibos-Tea-Bags.jpeg",
+        "rating": {}
+    },
+    {
+        "id": 10,
+        "title": "Rooibos Tea",
+        "price": 102.00,
+        "category": "Men",
+        "image": "/coffee/Products/RooibosTea.jpeg",
+        "rating": {}
+    },
+    {
+        "id": 11,
+        "title": "Yogi Tea Chai",
+        "price": 350.00,
+        "category": "Women",
+        "image": "/coffee/Products/Yogi-Tea-Chai.jpeg",
+        "rating": {}
+    },
+    {
+        "id": 12,
+        "title": "Coffee Tea",
+        "price": 114.00,
+        "category": "Women",
+        "image": "/coffee/Products/24187.jpeg",
+        "rating": {}
+    }
+]
