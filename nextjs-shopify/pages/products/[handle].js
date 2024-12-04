@@ -72,8 +72,8 @@ function Handle({ product, products }) {
             {/* <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2"></div> */}
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
               <button
-                onClick={checkout}
-                // onClick={() => setIsLoading(!isLoading)}
+                // onClick={checkout}
+                onClick={() => setIsLoading(!isLoading)}
                 className="w-full bg-green-900 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-500"
               >
                 {isLoading && (

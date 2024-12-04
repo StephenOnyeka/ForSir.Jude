@@ -113,31 +113,56 @@ export default function Products({ products }) {
 //   };
 // }
 
-export async function getStaticProps() {
-    try {
-        const { data } = await storefront(productsQuery);
-      console.log("API Response: ", data);
-        // Check if data and products are defined
-        if (!data || !data.products) {
-            console.error("No products data found", data);
-            return {
-                notFound: true, // Return a 404 page if no products are found
-            };
-        }
+// export async function getStaticProps() {
+//     try {
+//         const { data } = await storefront(productsQuery);
+//       console.log("API Response: ", data);
+//         // Check if data and products are defined
+//         if (!data || !data.products) {
+//             console.error("No products data found", data);
+//             return {
+//                 notFound: true, // Return a 404 page if no products are found
+//             };
+//         }
 
-        return {
-            props: {
-                products: data.products,
-            },
-        };
-    } catch (error) {
-        console.error("Error fetching products:", error);
-        return {
-            notFound: true, // Return a 404 page on error
-        };
+//         return {
+//             props: {
+//                 products: data.products,
+//             },
+//         };
+//     } catch (error) {
+//         console.error("Error fetching products:", error);
+//         return {
+//             notFound: true, // Return a 404 page on error
+//         };
+//     }
+// }
+
+export async function getStaticProps({ params }) {
+  try {
+    const { data } = await storefront(singleProductQuery, {
+      handle: params.handle,
+    });
+
+    if (!data.productByHandle) {
+      return {
+        notFound: true, // Return a 404 page if the product is not found
+      };
     }
-}
 
+    return {
+      props: {
+        product: data.productByHandle,
+        products: data.products,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching product data:", error);
+    return {
+      notFound: true, // Return a 404 page if there was an error
+    };
+  }
+}
 
 const gql = String.raw;
 const productsQuery = gql`
